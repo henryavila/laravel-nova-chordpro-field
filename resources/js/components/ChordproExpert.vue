@@ -3,9 +3,9 @@
       <div class="laravel-nova-chordpro-field">
         <Chordpro
             :chord="content"
-            :chordpro-url="chordproUrl"
-            fileName="aaa"
-            chordproUrl="aaa"
+            :show-chords="showChords"
+            :show-tabs="showTabs"
+            :use-simple-chord="useSimpleChord"
         />
       </div>
 
@@ -18,10 +18,9 @@
       <div class="laravel-nova-chordpro-field">
         <Chordpro
             :chord="content"
-            :chordpro-url="chordproUrl"
-            fileName="aaa"
-            chordproUrl="aaa"
-            blockTitle="Teste"
+            :show-chords="showChords"
+            :show-tabs="showTabs"
+            :use-simple-chord="useSimpleChord"
         />
       </div>
     </div>
@@ -58,8 +57,17 @@ export default {
     content: {
       type: String,
     },
-    chordproUrl: {
-      type: String
+    showTabs: {
+      type: Boolean,
+      default: true
+    },
+    useSimpleChord: {
+      type: Boolean,
+      default: false
+    },
+    showChords: {
+      type: Boolean,
+      default: true
     }
   },
 

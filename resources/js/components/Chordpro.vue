@@ -5,7 +5,6 @@ import {computed, ref} from "vue";
 import Badge from "./Badge.vue";
 import {useLocalization} from 'laravel-nova'
 
-
 const props = defineProps({
   chord: String,
   showTabs: {
@@ -19,14 +18,6 @@ const props = defineProps({
   showChords: {
     type: Boolean,
     default: true
-  },
-  showTitle: {
-    type: Boolean,
-    default: true
-  },
-  showSubTitle: {
-    type: Boolean,
-    default: true
   }
 })
 
@@ -34,43 +25,7 @@ const report = ref()
 const printing = ref(false)
 const {__} = useLocalization()
 
-const kebabCase = str => str
-    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
-    .join('-')
-    .toLowerCase();
 
-const toMinutesSeconds = (duration) => {
-  const minutes = Math.floor(duration / 60);
-  const seconds = duration - minutes * 60;
-
-  const formattedMinutes = minutes.toLocaleString("en-US", {
-    minimumIntegerDigits: 2,
-    useGrouping: false,
-  });
-
-  const formattedSeconds = seconds.toLocaleString("en-US", {
-    minimumIntegerDigits: 2,
-    useGrouping: false,
-  });
-  return `${formattedMinutes}:${formattedSeconds}`;
-}
-
-const titleDisplayCss = computed(() => {
-  if (printing.value === true) {
-    return 'block'
-  }
-
-  return props.showTitle ? 'block' : 'none'
-})
-const subtitleDisplayCss = computed(() => {
-  if (printing.value === true) {
-    return 'block'
-  }
-
-  return props.showSubTitle ? 'block' : 'none'
-})
-
-//parser
 const parser = new ChordProParser();
 const parsedContent = parser.parse(props.chord);
 const settings = new FormatterSettings();
@@ -109,6 +64,27 @@ const savePdf = () => {
       .then(() => printing.value = false)
       .catch(() => printing.value = false)
 }
+
+const toMinutesSeconds = (duration) => {
+  const minutes = Math.floor(duration / 60);
+  const seconds = duration - minutes * 60;
+
+  const formattedMinutes = minutes.toLocaleString("en-US", {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+
+  const formattedSeconds = seconds.toLocaleString("en-US", {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  });
+  return `${formattedMinutes}:${formattedSeconds}`;
+}
+
+const kebabCase = str => str
+    .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
+    .join('-')
+    .toLowerCase();
 
 </script>
 

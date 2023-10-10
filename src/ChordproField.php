@@ -15,24 +15,6 @@ class ChordproField extends Textarea
 		$this->rows(20);
 	}
 
-	public function title(): self
-	{
-		return $this;
-	}
-
-
-	public function blockTitle(): self
-	{
-		return $this;
-	}
-
-	public function showMetadata(bool $value = true): self
-	{
-		$this->withMeta(['showMetadata' => $value]);
-
-		return $this;
-	}
-
 	public function showTabs(bool $value = true): self
 	{
 		$this->withMeta(['showTabs' => $value]);
@@ -53,19 +35,4 @@ class ChordproField extends Textarea
 
 		return $this;
 	}
-
-	public function showTitle(bool $value = true): self
-	{
-		$this->withMeta(['showTitle' => $value]);
-
-		return $this;
-	}
-
-	public function showSubTitle(bool $value = true): self
-	{
-		$this->withMeta(['showSubTitle' => $value]);
-
-		return $this;
-	}
-
 }
