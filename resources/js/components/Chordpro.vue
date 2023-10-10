@@ -1,7 +1,7 @@
 <script setup>
 import html2pdf from "html2pdf.js";
 import {ChordProParser, FormatterSettings, HtmlFormatter,} from "chordproject-parser";
-import {computed, ref} from "vue";
+import { ref} from "vue";
 import Badge from "./Badge.vue";
 import {useLocalization} from 'laravel-nova'
 
@@ -93,7 +93,7 @@ const kebabCase = str => str
   <div class="prose dark:prose-invert">
     <div class="max-w-fit ml-auto mr-0">
       <Badge v-if="!printing" :name="__('save pdf')" class="cursor-pointer" @click="savePdf"/>
-      <div v-else class="mr-8" :class="{printing: 'hidden'}">
+      <div v-else class="mr-8">
         {{ __('wait...') }}
       </div>
     </div>
