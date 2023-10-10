@@ -98,6 +98,10 @@ const kebabCase = str => str
       </div>
     </div>
 
+    <div v-if="parser?.warnings?.length > 0" class="text-red-600 text-sm">
+      <div class="font-bold">{{__('Errors found')}}</div>
+      <div v-for="warn in parser?.warnings">&bullet; {{warn}}</div>
+    </div>
 
     <div ref="report" class="font-mono" :class="{printing: 'text-gray-900'}">
 

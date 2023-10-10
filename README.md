@@ -32,7 +32,9 @@ sempre a bri[A/E]lhar por [E]Ti
 [E]    Eu sou [B]filho do Rei do univer [B]- so,
 {eoc}
 ```
+
 will be rendered inside Laravel Nova Field as
+
 ![image](https://github.com/henryavila/laravel-nova-chordpro-field/assets/8429941/1e803e48-af04-4ee2-b9c9-8b67183eb070)
 
 also, supports dark mode
@@ -40,11 +42,16 @@ also, supports dark mode
 ![image](https://github.com/henryavila/laravel-nova-chordpro-field/assets/8429941/44878bb4-785f-40db-857f-928d0e19c8ee)
 
 
+If the Chorpro has some invalid content, it will be displayed in Detail view
+
+![image](https://github.com/henryavila/laravel-nova-chordpro-field/assets/8429941/ba7b8b60-8c6c-4a41-89e6-e84caae2233e)
+
 
 
 This package is built with https://github.com/chordproject/chorpro-parser and https://github.com/eKoopmans/html2pdf.js and allows to
 - Edit chordpro (simple TextArea editor)
 - View a fully formatted song
+- Display chordpro parser errors
 - Generate a pdf with the formatted song
 - Translate the displayed text like "Key", "Time", etc
 
