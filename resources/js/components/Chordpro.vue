@@ -154,6 +154,7 @@ const savePdf = () => {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin-top: 0.3rem;
 }
 
 .chord-lyrics {
@@ -164,6 +165,7 @@ const savePdf = () => {
 
 .above-lyrics {
   padding-right: 0.3em;
+  margin-bottom: -0.3rem !important
 }
 
 .tab-section {
