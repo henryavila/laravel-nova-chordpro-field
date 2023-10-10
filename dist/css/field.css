@@ -1,0 +1,180 @@
+.laravel-nova-chordpro-field :is(.m-1) {
+    margin: 0.25rem
+}
+.laravel-nova-chordpro-field :is(.ml-auto) {
+    margin-left: auto
+}
+.laravel-nova-chordpro-field :is(.mr-0) {
+    margin-right: 0px
+}
+.laravel-nova-chordpro-field :is(.mr-8) {
+    margin-right: 2rem
+}
+.laravel-nova-chordpro-field :is(.mt-6) {
+    margin-top: 1.5rem
+}
+.laravel-nova-chordpro-field :is(.block) {
+    display: block
+}
+.laravel-nova-chordpro-field :is(.inline-block) {
+    display: inline-block
+}
+.laravel-nova-chordpro-field :is(.flex) {
+    display: flex
+}
+.laravel-nova-chordpro-field :is(.hidden) {
+    display: none
+}
+.laravel-nova-chordpro-field :is(.h-auto) {
+    height: auto
+}
+.laravel-nova-chordpro-field :is(.w-full) {
+    width: 100%
+}
+.laravel-nova-chordpro-field :is(.max-w-fit) {
+    max-width: -moz-fit-content;
+    max-width: fit-content
+}
+.laravel-nova-chordpro-field :is(.max-w-none) {
+    max-width: none
+}
+.laravel-nova-chordpro-field :is(.cursor-pointer) {
+    cursor: pointer
+}
+.laravel-nova-chordpro-field :is(.flex-wrap) {
+    flex-wrap: wrap
+}
+.laravel-nova-chordpro-field :is(.items-start) {
+    align-items: flex-start
+}
+.laravel-nova-chordpro-field :is(.justify-between) {
+    justify-content: space-between
+}
+.laravel-nova-chordpro-field :is(.space-y-1 > :not([hidden]) ~ :not([hidden])) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.25rem * var(--tw-space-y-reverse))
+}
+.laravel-nova-chordpro-field :is(.break-normal) {
+    overflow-wrap: normal;
+    word-break: normal
+}
+.laravel-nova-chordpro-field :is(.rounded) {
+    border-radius: 0.25rem
+}
+.laravel-nova-chordpro-field :is(.border) {
+    border-width: 1px
+}
+.laravel-nova-chordpro-field :is(.border-slate-100) {
+    --tw-border-opacity: 1;
+    border-color: rgb(241 245 249 / var(--tw-border-opacity))
+}
+.laravel-nova-chordpro-field :is(.border-slate-200) {
+    --tw-border-opacity: 1;
+    border-color: rgb(226 232 240 / var(--tw-border-opacity))
+}
+.laravel-nova-chordpro-field :is(.bg-slate-100) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(241 245 249 / var(--tw-bg-opacity))
+}
+.laravel-nova-chordpro-field :is(.px-1) {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem
+}
+.laravel-nova-chordpro-field :is(.px-1\.5) {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem
+}
+.laravel-nova-chordpro-field :is(.py-0) {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+.laravel-nova-chordpro-field :is(.py-0\.5) {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem
+}
+.laravel-nova-chordpro-field :is(.py-3) {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem
+}
+.laravel-nova-chordpro-field :is(.text-right) {
+    text-align: right
+}
+.laravel-nova-chordpro-field :is(.font-mono) {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+}
+.laravel-nova-chordpro-field :is(.text-3xl) {
+    font-size: 1.875rem;
+    line-height: 2.25rem
+}
+.laravel-nova-chordpro-field :is(.text-xl) {
+    font-size: 1.25rem;
+    line-height: 1.75rem
+}
+.laravel-nova-chordpro-field :is(.text-xs) {
+    font-size: 0.75rem;
+    line-height: 1rem
+}
+.laravel-nova-chordpro-field :is(.font-bold) {
+    font-weight: 700
+}
+.laravel-nova-chordpro-field :is(.font-light) {
+    font-weight: 300
+}
+.laravel-nova-chordpro-field :is(.font-normal) {
+    font-weight: 400
+}
+.laravel-nova-chordpro-field :is(.leading-4) {
+    line-height: 1rem
+}
+.laravel-nova-chordpro-field :is(.text-gray-500) {
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity))
+}
+.laravel-nova-chordpro-field :is(.text-gray-900) {
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity))
+}
+.laravel-nova-chordpro-field :is(.text-slate-500) {
+    --tw-text-opacity: 1;
+    color: rgb(100 116 139 / var(--tw-text-opacity))
+}
+.laravel-nova-chordpro-field :is(.opacity-75) {
+    opacity: 0.75
+}
+.laravel-nova-chordpro-field :is(.opacity-80) {
+    opacity: 0.8
+}
+.laravel-nova-chordpro-field :is(.hover\:bg-slate-200:hover) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity))
+}
+@media (prefers-color-scheme: dark) {
+    .laravel-nova-chordpro-field :is(.dark\:border-slate-800) {
+        --tw-border-opacity: 1;
+        border-color: rgb(30 41 59 / var(--tw-border-opacity))
+    }
+    @media (prefers-color-scheme: dark) {
+        .laravel-nova-chordpro-field :is(.dark\:dark\:border-slate-800) {
+            --tw-border-opacity: 1;
+            border-color: rgb(30 41 59 / var(--tw-border-opacity))
+        }
+    }
+    .laravel-nova-chordpro-field :is(.dark\:bg-gray-800) {
+        --tw-bg-opacity: 1;
+        background-color: rgb(31 41 55 / var(--tw-bg-opacity))
+    }
+    .laravel-nova-chordpro-field :is(.dark\:text-gray-400) {
+        --tw-text-opacity: 1;
+        color: rgb(156 163 175 / var(--tw-text-opacity))
+    }
+    .laravel-nova-chordpro-field :is(.dark\:text-slate-300) {
+        --tw-text-opacity: 1;
+        color: rgb(203 213 225 / var(--tw-text-opacity))
+    }
+    .laravel-nova-chordpro-field :is(.dark\:hover\:bg-gray-700:hover) {
+        --tw-bg-opacity: 1;
+        background-color: rgb(55 65 81 / var(--tw-bg-opacity))
+    }
+}
+
