@@ -1,6 +1,6 @@
 # Laravel Nova Chordpro Field
 
-Add a [Chordpro](https://www.chordpro.org/chordpro/chordpro-introduction/)  viewer and editor into Laraavel Nova.
+Add a [Chordpro](https://www.chordpro.org/chordpro/chordpro-introduction/)  viewer and editor into Laravel Nova.
 The editor is a simple TextArea. The viewer display a fully formatted song.
 
 

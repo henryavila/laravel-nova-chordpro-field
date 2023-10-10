@@ -1,6 +1,6 @@
 {
   "name": "henryavila/laravel-nova-chordpro-field",
-  "description": "A Laravel Nova field.",
+  "description": "Add a Chordpro viewer and editor into Laravel Nova. The editor is a simple TextArea. The viewer display a fully formatted song.",
   "keywords": [
     "laravel",
     "nova"
