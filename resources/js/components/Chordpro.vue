@@ -113,7 +113,10 @@ const kebabCase = str => str
         </div>
 
         <div class="text-right opacity-75">
-          <div v-if="parsedContent.key">{{ __('Key in') }} {{ parsedContent.key }}</div>
+          <div v-if="parsedContent.key">
+            {{ __('Key in') }} {{ parsedContent.key }}
+            <span v-if="parsedContent?.capo">{{ __('Capo') }} {{ parsedContent?.capo }}</span>
+          </div>
           <div v-if="parsedContent.tempo || parsedContent.time">
             <span v-if="parsedContent.tempo">{{ parsedContent.tempo }} BPM </span>
             <span v-if="parsedContent.time"> {{ __('in') + ' ' + parsedContent.time }}</span>
